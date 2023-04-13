@@ -1,0 +1,52 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ul, ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+body{
+    min-height: 100vh;
+    background: linear-gradient(45deg, black 20%,gray 60%, black)
+}
+nav{
+    position: sticky;
+    display: flex;
+    justify-content: center;
+}
+nav>ul>li{
+    float:left;
+}
+nav ul li ul{
+    display: none;
+}
+nav ul li ul li{
+    position: relative;
+}
+nav>ul>li>ul>li>ul{
+    position: absolute;
+    top: 0;
+    left: 7em;
+}
+li:hover>ul{
+    display: block;
+}
+li{
+    background-color: #222;
+}
+nav li a{
+    display:block;
+    padding: .2em;
+    width: 7em;
+    text-align: center;
+    color: #aaa;
+
+}
+nav li a:hover{
+    background-color: #444;
+    color: #ccc;
+}
